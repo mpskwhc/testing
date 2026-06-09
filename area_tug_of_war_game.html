@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Tone.js for high-fidelity audio synthesis -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #f8fafc;
+        }
+        .heading-font {
+            font-family: 'Fredoka One', cursive;
+        }
+        /* Horizontal Tug of War Animation */
+        .rope-transition {
+            transition: left 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .disabled-element {
+            opacity: 0.5;
+            pointer-events: none;
+            filter: grayscale(100%);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between p-2 md:p-4">
+
+    <!-- Start & Configuration Screen Overlay -->
+    <div id="start-screen" class="fixed inset-0 bg-slate-900/95 flex flex-col justify-center items-center p-4 z-50 text-white backdrop-blur-md">
+        <div class="max-w-md w-full bg-slate-800 rounded-3xl p-6 md:p-8 border-4 border-indigo-500 shadow-2xl text-center">
+            <span class="text-6xl md:text-7xl block mb-4 animate-bounce">🪼🪼🪼🪼🪼</span>
+            <h1 class="heading-font text-3xl md:text-4xl text-indigo-400 tracking-wide mb-2">
+                Jellyfish
+            </h1>
+
+            <!-- Game Mode / Preference Configuration -->
+            <div class="bg-slate-700/50 rounded-2xl p-4 mb-6 border border-slate-600 text-left space-y-4">       
+                <div>
+                    <label class="block text-xs font-bold text-gray-200 mb-1.5">Area & Dimensions Tug-of-War</label>
+                    <div class="grid grid-cols-2 gap-2">
+                        <a href="https://mpskwhc.github.io/testing/index.html/">https://mpskwhc.github.io/testing/index.html</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </script>
+</body>
+</html>
